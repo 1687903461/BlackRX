@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maixmum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>黑马页面</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<!-- flex+rem+flexible.js+LESS -->
+<body>
+<section class="warp">
+   <header class="header">黑马BlackRx</header>
+   <nav class="nav">
+    <a href="" class="item">
+        <img src="icons/icon1.png" alt="" srcset="">
+        <span>HR面试</span>
+    </a>
+    <a href="" class="item">
+        <img src="icons/icon2.png" alt="" srcset="">
+        <span>笔试</span>
+    </a>
+    <a href="" class="item">
+        <img src="icons/icon3.png" alt="" srcset="">
+        <span>技术面试</span>
+    </a>
+    </a>
+    <a href="" class="item">
+        <img src="icons/icon4.png" alt="" srcset="">
+        <span>模拟面试</span>
+    </a>
+    <a href="" class="item">
+        <img src="icons/icon5.png" alt="" srcset="">
+        <span>面试技巧</span>
+    </a>
+    <a href="" class="item">
+        <img src="icons/icon6.png" alt="" srcset="">
+        <span>薪资查询</span>
+    </a>
+   </nav>
+   <!-- go模块 -->
+   <section class="go">
+    <img src="img/go.png" alt="" srcset="">
+   </section>
+</section>
+<!-- 就业指导 -->
+<section class="content">
+    <div class="con-hd">
+        <a href="">
+            <h4><img src="icons/i2.png" alt="" srcset="">就业指导</h4>
+        </a>
+        <a href="" class="gengduo">更多>></a>
+    </div>
+       <!-- 旋转木马 -->
+    <div class="get_job_focus">
+        <div class="swiper-container">
+            <div class="swiper-wrapper get_job_fo">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/pic.png" alt="" srcset="">
+                        <p>老师教你应对面试技巧</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/ldh.jpg" alt="" srcset="">
+                        <p>老师教你应对面试技巧</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/3.jpg" alt="" srcset="">
+                        <p>老师教你应对面试技巧</p>
+                    </a>
+                </div>
+
+            </div>
+            <!-- 左右按钮 -->
+            <!-- Add Pagination
+                <div class="swiper-pagination"></div> -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<!-- 充电学习 -->
+<section class="content">
+    <div class="con-hd">
+        <a href="">
+            <h4><img src="icons/i1.png" alt="" srcset="">充电学习</h4>
+        </a>
+        <a href="" class="gengduo">更多>></a>
+    </div>
+    <!-- 学习模块轮播图 -->
+    <div class="study">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/pic1.png" alt="" srcset="">
+                <h5>说低调英语，告别中式英语</h5>
+                <p>156人学习</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/pic2.png" alt="" srcset="">
+                <h5>思维攻略金字塔思维提升写作能力</h5>
+                <p>289人学习</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/pic1.png" alt="" srcset="">
+                <h5>说低调英语，告别中式英语</h5>
+                <p>156人学习</p>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </div>
+</section>
+<!-- 底部模块 -->
+<footer class="footer">
+    <a href="">
+        <img src="icons/home.png" alt="" srcset="">
+        <p>首页</p>
+    </a>
+    <a href="">
+        <img src="icons/ms.png" alt="" srcset="">
+        <p>模拟面试</p>
+    </a>
+    <a href="">
+        <img src="icons/net.png" alt="" srcset="">
+        <p>技术面试</p>
+    </a>
+    <a href="">
+        <img src="icons/user.png" alt="" srcset="">
+        <p>我的首页</p>
+    </a>
+</footer>
+<script src="js/flexible.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+<script>
+    (function () {
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            // pagination: {
+            //     el: '.swiper-pagination',
+            //     clickable: true,
+            // },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    })();
+    // 第二个函数的轮播图
+    (function(){
+      var swiper = new Swiper(".mySwiper", {
+        //可见个数
+        slidesPerView: 2.5,
+        spaceBetween: 20,
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+      });
+    })()
+</script>
+</body>
+</html>
